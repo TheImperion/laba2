@@ -1,0 +1,91 @@
+body{
+	background-color: #e2e7e1;
+}
+
+.main_menu{
+	list-style-type: none;
+}
+
+.main_menu li a{
+	color: #2467d0;
+	text-decoration: none;
+	font-size: 16px;
+	font-family: Verdana;
+}
+
+.main_menu li a:hover{
+	color: #9a24d0;
+}
+
+.title{
+	font-size: 18px;
+	color: #000;
+	font-weight: 400;
+}
+
+#ymap{
+	height: 300px;
+	width: 100%;
+}
+
+.catalog_wrapper{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.short_description{
+	color: #2B343A;
+	font-size: 14px;
+	font-style: italic;
+	line-height: 16px;
+}
+
+.detail_description{
+	color: #484343;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: left;
+}
+
+.characteristics ul{
+	list-style-image: url(/catalog/images/marker.png);
+}
+
+.characteristics ul li{
+	color: #1D3F56;
+	line-height: 20px;
+}
+
+.detail_picture_link img{
+	border: 3px solid #1D3F56;
+	transition: 0.5s;
+}
+
+.detail_picture_link:hover img{
+	border-color: transparent;
+}
+
+.form_contact{
+	display: flex;
+	flex-direction: column;
+}
+
+.form_contact .line_form{
+	width: 210px;
+	height: 20px;
+	margin-bottom: 15px;
+	color: #1D3F56;
+	font-size: 15px;
+
+	text-transform: capitalize;
+}
+
+.form_contact textarea{
+	width: 210px;
+	resize: vertical;
+
+	text-transform: capitalize;
+}

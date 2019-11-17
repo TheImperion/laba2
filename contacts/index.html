@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Контакты</title>
+	<link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+
+	<div class="header">
+		<ul class="main_menu">
+			<li><a href="/">Главная</a></li>
+			<li><a href="/catalog/index.html">Каталог</a></li>
+			<li><a href="/contacts/index.html">Контакты</a></li>
+		</ul>
+	</div>
+	<hr>
+
+	<div>Напишите нам</div>
+	<form method="POST" action="" class="form_contact">
+		<input class="line_form" type="text" name="" placeholder="Имя">
+		<input class="line_form" type="text" name="" placeholder="Email">
+		<input class="line_form" type="text" name="" placeholder="Тема">
+		<textarea placeholder="Текстовое поле"></textarea>
+
+		<div><input type="checkbox" name=""> Согласие с <a href="#">правилами</a> сайта</div>
+	</form>
+
+	<div>Адреса</div>
+	<div>Телефон: <a href="tel:88005553535">8 800 555 35 35</a></div>
+	<div>г.Москва, ул. Ленина 118</div>
+	<div>Email: magazin@specialforyou.ru</div>
+	<div>Мы классные.</div>
+
+	<div id="ymap"></div>
+
+	<hr>
+	<div class="footer">
+		<span>© Все права защищены</span>
+	</div>
+
+
+	<script ENGINE="text/javascript" src="https://code.jquery.com/jquery-1.11.2.js "></script>
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=d6a8f63d-9f85-430e-8442-04c33ec27a1a&lang=ru_RU" type="text/javascript"></script>
+	<script type="text/javascript">
+		$( document ).ready(function() {
+		    ymaps.ready(function () {  
+			var map = new ymaps.Map("ymap", {
+			  center: [55.76, 37.64], 
+			  zoom: 10
+			});
+
+			if (map) {
+			  ymaps.modules.require(['Placemark', 'Circle'], function (Placemark, Circle) {
+			    var placemark = new Placemark([55.37, 35.45]);
+			  });
+			}
+			});
+		});
+	</script>
+
+</body>
+</html>
